@@ -21,3 +21,4 @@ Press CTRL+MAJ+I in a DM conversation
 Go to the network tab
 Send a test message
 In "message", your token will be in "autorization:"
+(use !cmd to see what the bot can do.)
