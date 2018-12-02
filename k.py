@@ -249,6 +249,24 @@ async def live(ctx):
     if bot.user.id == ctx.message.author.id:
         await bot.change_presence(game=discord.Game(name="𝐕𝐞𝐬𝐩𝐚 𝐂𝐨𝐫𝐩𝐨𝐫𝐚𝐭𝐢𝐨𝐧 𝐕𝟐.𝟎", url="https://twitch.tv/skiruaa", type=1))
     await bot.delete_message(ctx.message)
+    
+@bot.command(pass_context=True)
+async def ecoute(ctx):
+    if bot.user.id == ctx.message.author.id:
+        await bot.change_presence(game=discord.Game(name="tout ce que tu dit.", url="https://twitch.tv/skiruaa", type=2))
+    await bot.delete_message(ctx.message)
+
+@bot.command(pass_context=True)
+async def watch(ctx):
+    if bot.user.id == ctx.message.author.id:
+        await bot.change_presence(game=discord.Game(name="Le cul de ta soeur.", type=3))
+    await bot.delete_message(ctx.message)
+
+@bot.command(pass_context=True)
+async def joue(ctx):
+    if bot.user.id == ctx.message.author.id:
+        await bot.change_presence(game=discord.Game(name="", type=0))
+    await bot.delete_message(ctx.message)
 
 
 
