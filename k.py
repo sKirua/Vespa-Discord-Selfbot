@@ -267,6 +267,12 @@ async def joue(ctx):
     if bot.user.id == ctx.message.author.id:
         await bot.change_presence(game=discord.Game(name="", type=0))
     await bot.delete_message(ctx.message)
+    
+@bot.command(pass_context=True)
+async def noob(ctx, *, msg: str):
+        lmgtfy = 'http://lmgtfy.com/?q='
+        await bot.say(lmgtfy + urllib.parse.quote_plus(msg.lower().strip()))
+        await bot.delete_message(ctx.message)    
 
 
 
