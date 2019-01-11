@@ -61,7 +61,16 @@ bot.remove_command("help")
 
 @bot.event
 async def on_ready():
-    print ("Paré à l'attaque capitaine.")
+	print("										")
+	print("	.▄▄ · ▄▄▄ .▄▄▌  ·▄▄▄▄▄▄▄·       ▄▄▄▄▄  ")
+	print("	▐█ ▀. ▀▄.▀·██•  ▐▄▄·▐█ ▀█▪▪     •██    ")
+	print("	▄▀▀▀█▄▐▀▀▪▄██▪  ██▪ ▐█▀▀█▄ ▄█▀▄  ▐█.▪  ")
+	print("	▐█▄▪▐█▐█▄▄▌▐█▌▐▌██▌.██▄▪▐█▐█▌.▐▌ ▐█▌·  ")
+	print("	 ▀▀▀▀  ▀▀▀ .▀▀▀ ▀▀▀ ·▀▀▀▀  ▀█▄▀▪ ▀▀▀   ")
+	print("\n")
+	print("Pseudo du capitaine: ",bot.user, "\n")
+	print("Bot Developpé par Kirua")
+
 
 @bot.event
 async def on_message(msg):
@@ -207,42 +216,27 @@ async def ombre(ctx):
     await bot.delete_message(ctx.message)
 
 @bot.command(pass_context=True)
-async def cmd(ctx):
-    await bot.say("\n".join(["```fix",
-"       __     __",
-"       \ \   / /__  ___ _ __   __ _",
-"        \ \ / / _ \/ __| '_ \ / _` |",
-"         \ V /  __/\__ \ |_) | (_| |",
-"          \_/ \___||___/ .__/ \__,_|",
-"                        |_|",
-" Tu fait parti de la cour des grands petit",
-" Tu as mtn acces au selfbot privé de la vespa",
-"                                                           ",
-" 1) clear (Vous permets de supprimer tout vos messages ou un nombre spécifique de messages )",
-"                                                           ",
-" 2) ripinpeace (Vous permets de ban tout les utilisateurs d'un discord)",
-"                                                           ",
-" 3) avatar + url (Vous permets de changer d'avatar avec un lien)",
-"                                                           ",
-" 4) rainbow + texte (Vous permets de faire un embed qui change de coulleur avec un texte au choix) ",
-"                                                           ",
-" 5) a + texte (Vous permets de faire un embed avec une coulleur aléatoir) ",
-"                                                           ",
-" 6) getav @macaque_a_qui_tu_veux_voler_la_pdp (Vous permets de voler des avatar ou de vous moquer de l'avatar de vos camarades) ",
-"                                                           ",
-" 7) twitter (Affiche un embed avec votre Twitter [changez dans la source]",
-"                                                           ",
-" 8) cyao (fait cette commande sur ton propre discord si t un homme) ",
-"                                                           ",
-" 9) ombre (cette commande fait de vous un pirate) ",
-"                                                           ",
-" 10) live (cette commande vous affiche en stream) ",
-    "```"]))
+async def help(ctx, *, name=""):
+    embed=discord.Embed(title="𝑳𝒊𝒔𝒕𝒆𝒔 𝒅𝒆𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒆𝒔 𝒅𝒖 𝑺𝒆𝒍𝒇𝒃𝒐𝒕 𝒅𝒆 𝒍𝒂 𝑽𝒆𝒔𝒑𝒂.",color=0x9900FF)
+    embed.add_field(name='𝐜𝐥𝐞𝐚𝐫', value='𝐕𝐨𝐮𝐬 𝐩𝐞𝐫𝐦𝐞𝐭𝐬 𝐝𝐞 𝐬𝐮𝐩𝐩𝐫𝐢𝐦𝐞𝐫 𝐭𝐨𝐮𝐭 𝐯𝐨𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬 𝐨𝐮 𝐮𝐧 𝐧𝐨𝐦𝐛𝐫𝐞 𝐬𝐩𝐞́𝐜𝐢𝐟𝐢𝐪𝐮𝐞 𝐝𝐞 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬', inline=False)
+    embed.add_field(name='𝐚', value='𝐕𝐨𝐮𝐬 𝐩𝐞𝐫𝐦𝐞𝐭𝐬 𝐝𝐞 𝐟𝐚𝐢𝐫𝐞 𝐝𝐞𝐬 𝐞𝐦𝐛𝐞𝐝', inline=False)
+    embed.add_field(name='𝐭𝐰𝐢𝐭𝐭𝐞𝐫', value='𝐀𝐟𝐟𝐢𝐜𝐡𝐞 𝐮𝐧 𝐞𝐦𝐛𝐞𝐝 𝐚𝐯𝐞𝐜 𝐯𝐨𝐭𝐫𝐞 𝐓𝐰𝐢𝐭𝐭𝐞𝐫 [𝐜𝐡𝐚𝐧𝐠𝐞𝐳 𝐝𝐚𝐧𝐬 𝐥𝐚 𝐬𝐨𝐮𝐫𝐜𝐞]', inline=False)
+    embed.add_field(name='𝐜𝐲𝐚𝐨', value='𝐅𝐚𝐢𝐭 𝐜𝐞𝐭𝐭𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐬𝐮𝐫 𝐭𝐨𝐧 𝐩𝐫𝐨𝐩𝐫𝐞 𝐝𝐢𝐬𝐜𝐨𝐫𝐝 𝐬𝐢 𝐭 𝐮𝐧 𝐡𝐨𝐦𝐦𝐞', inline=False)
+    embed.add_field(name='𝐎𝐦𝐛𝐫𝐞', value='𝐂𝐞𝐭𝐭𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐟𝐚𝐢𝐭 𝐝𝐞 𝐭𝐨𝐢 𝐮𝐧 𝐩𝐢𝐫𝐚𝐭𝐞', inline=False)
+    embed.add_field(name='𝐥𝐢𝐯𝐞', value='𝐂𝐞𝐭𝐭𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐜𝐡𝐚𝐧𝐠𝐞 𝐯𝐨𝐭𝐫𝐞 𝐬𝐭𝐚𝐭𝐮𝐭', inline=False)
+    embed.add_field(name='𝐞𝐜𝐨𝐮𝐭𝐞', value='𝐂𝐞𝐭𝐭𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐜𝐡𝐚𝐧𝐠𝐞 𝐯𝐨𝐭𝐫𝐞 𝐬𝐭𝐚𝐭𝐮𝐭)', inline=False)
+    embed.add_field(name='𝐰𝐚𝐭𝐜𝐡', value='𝐂𝐞𝐭𝐭𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐜𝐡𝐚𝐧𝐠𝐞 𝐯𝐨𝐭𝐫𝐞 𝐬𝐭𝐚𝐭𝐮𝐭)', inline=False)
+    embed.add_field(name='𝐣𝐨𝐮𝐞', value='𝐂𝐞𝐭𝐭𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐜𝐡𝐚𝐧𝐠𝐞 𝐯𝐨𝐭𝐫𝐞 𝐬𝐭𝐚𝐭𝐮𝐭)', inline=False)
+    embed.add_field(name='𝐧𝐨𝐨𝐛', value='𝐏𝐞𝐫𝐦𝐞𝐭𝐬 𝐝𝐞 𝐫𝐞́𝐩𝐨𝐧𝐝𝐫𝐞 𝐚𝐮 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 𝐝𝐞𝐬 𝐧𝐨𝐨𝐛', inline=False)
+    embed.add_field(name='𝐧𝐢𝐜𝐤𝐧𝐚𝐦𝐞 + 𝐩𝐬𝐞𝐮𝐝𝐨 ', value='𝐂𝐡𝐚𝐧𝐠𝐞 𝐯𝐨𝐭𝐫𝐞 𝐩𝐬𝐞𝐮𝐝𝐨 𝐬𝐮𝐫 𝐥𝐞𝐬 𝐬𝐞𝐫𝐯𝐞𝐮𝐫𝐬', inline=False)
+    embed.add_field(name='𝐪𝐢 + @𝐦𝐚𝐜𝐚𝐪𝐮𝐞 ', value='𝐂𝐚𝐥𝐜𝐮𝐥 𝐥𝐞 𝐪𝐢 𝐝\'𝐮𝐧 𝐦𝐚𝐜𝐚𝐪𝐮𝐞',inline=False)
+    embed.add_field(name='𝐮𝐬𝐞𝐫𝐢𝐧𝐟𝐨 + @𝐦𝐚𝐜𝐚𝐪𝐮𝐞 ', value='𝐏𝐞𝐫𝐦𝐞𝐭𝐬 𝐝𝐞 𝐭𝐨𝐮𝐭 𝐬𝐚𝐯𝐨𝐢𝐫 𝐬𝐮𝐫 𝐮𝐧 𝐦𝐚𝐜𝐚𝐪𝐮𝐞', inline=False)
+    embed.set_thumbnail(url='https://i.imgur.com/GxNI0Mk.png')
+    embed.set_author(name='𝐕𝐞𝐬𝐩𝐚 𝐂𝐨𝐫𝐩𝐨𝐫𝐚𝐭𝐢𝐨𝐧', icon_url='https://i.imgur.com/GxNI0Mk.png')
+    embed.set_image(url='https://i.imgur.com/W1ZFZ3h.gif')
+    embed.set_footer(text='◊ Copyright © 2018 𝐕𝐞𝐬𝐩𝐚 𝐂𝐨𝐫𝐩𝐨𝐫𝐚𝐭𝐢𝐨𝐧 Project. ◊')
+    await bot.say(embed=embed)
     await bot.delete_message(ctx.message)
-
-
-
-
 
 @bot.command(pass_context=True)
 async def live(ctx):
@@ -272,7 +266,26 @@ async def joue(ctx):
 async def noob(ctx, *, msg: str):
         lmgtfy = 'http://lmgtfy.com/?q='
         await bot.say(lmgtfy + urllib.parse.quote_plus(msg.lower().strip()))
-        await bot.delete_message(ctx.message)    
+        await bot.delete_message(ctx.message)
+        
+@bot.command(pass_context=True)
+async def ytb(ctx, *, msg: str):
+        ytb = 'https://www.youtube.com/results?search_query='
+        await bot.say(ytb + urllib.parse.quote_plus(msg.lower().strip()))
+        await bot.delete_message(ctx.message)
+
+@bot.command(pass_context=True)
+async def geo(ctx, *, msg: str):
+        ip = 'https://www.ip-tracker.org/locator/ip-lookup.php?ip='
+        await bot.say(ip + urllib.parse.quote_plus(msg.lower().strip()))
+        await bot.delete_message(ctx.message)
+
+
+@bot.command(pass_context=True)
+async def gif(ctx, *, msg: str):
+        gif = 'https://giphy.com/search/'
+        await bot.say(gif + msg.lower().replace(" ", "-") )
+        await bot.delete_message(ctx.message)
 
 
 
