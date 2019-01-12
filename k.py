@@ -37,7 +37,6 @@ import asyncio
 import aiohttp
 from random import choice
 import random
-import giphypop
 import math
 import urllib.parse
 import re
