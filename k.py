@@ -24,7 +24,7 @@ preg = {
     "-maroc": "https://tenor.com/view/morocco-gif-10654888",
     "-ytb": "https://www.youtube.com/channel/UCopJeFcYCYtJUqBUFeGvueA",
     "-pb": "https://pastebin.com/u/Empereur_Kirua",
-    "-vespa": "https://discord.gg/hPMeHph",
+    "-vespa": "https://discord.gg/bYtQKww",
     "-github": "**Github: **https://github.com/sKirua/",
     "-slime": "༼ つ ◕_◕ ༽つ ",
 
@@ -219,6 +219,7 @@ async def help(ctx, *, name=""):
     embed=discord.Embed(title="𝑳𝒊𝒔𝒕𝒆𝒔 𝒅𝒆𝒔 𝒄𝒐𝒎𝒎𝒂𝒏𝒅𝒆𝒔 𝒅𝒖 𝑺𝒆𝒍𝒇𝒃𝒐𝒕 𝒅𝒆 𝒍𝒂 𝑽𝒆𝒔𝒑𝒂.",color=0x9900FF)
     embed.add_field(name='𝐜𝐥𝐞𝐚𝐫', value='𝐕𝐨𝐮𝐬 𝐩𝐞𝐫𝐦𝐞𝐭𝐬 𝐝𝐞 𝐬𝐮𝐩𝐩𝐫𝐢𝐦𝐞𝐫 𝐭𝐨𝐮𝐭 𝐯𝐨𝐬 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬 𝐨𝐮 𝐮𝐧 𝐧𝐨𝐦𝐛𝐫𝐞 𝐬𝐩𝐞́𝐜𝐢𝐟𝐢𝐪𝐮𝐞 𝐝𝐞 𝐦𝐞𝐬𝐬𝐚𝐠𝐞𝐬', inline=False)
     embed.add_field(name='𝐚', value='𝐕𝐨𝐮𝐬 𝐩𝐞𝐫𝐦𝐞𝐭𝐬 𝐝𝐞 𝐟𝐚𝐢𝐫𝐞 𝐝𝐞𝐬 𝐞𝐦𝐛𝐞𝐝', inline=False)
+    embed.add_field(name='𝐩𝐫𝐞𝐠𝐬', value='𝐂𝐞𝐭𝐭𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐯𝐨𝐮𝐬 𝐚𝐟𝐟𝐢𝐜𝐡𝐞 𝐭𝐨𝐮𝐭 𝐥𝐞𝐬 𝐩𝐫𝐞𝐠.', inline=False)
     embed.add_field(name='𝐭𝐰𝐢𝐭𝐭𝐞𝐫', value='𝐀𝐟𝐟𝐢𝐜𝐡𝐞 𝐮𝐧 𝐞𝐦𝐛𝐞𝐝 𝐚𝐯𝐞𝐜 𝐯𝐨𝐭𝐫𝐞 𝐓𝐰𝐢𝐭𝐭𝐞𝐫 [𝐜𝐡𝐚𝐧𝐠𝐞𝐳 𝐝𝐚𝐧𝐬 𝐥𝐚 𝐬𝐨𝐮𝐫𝐜𝐞]', inline=False)
     embed.add_field(name='𝐜𝐲𝐚𝐨', value='𝐅𝐚𝐢𝐭 𝐜𝐞𝐭𝐭𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐬𝐮𝐫 𝐭𝐨𝐧 𝐩𝐫𝐨𝐩𝐫𝐞 𝐝𝐢𝐬𝐜𝐨𝐫𝐝 𝐬𝐢 𝐭 𝐮𝐧 𝐡𝐨𝐦𝐦𝐞', inline=False)
     embed.add_field(name='𝐎𝐦𝐛𝐫𝐞', value='𝐂𝐞𝐭𝐭𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 𝐟𝐚𝐢𝐭 𝐝𝐞 𝐭𝐨𝐢 𝐮𝐧 𝐩𝐢𝐫𝐚𝐭𝐞', inline=False)
@@ -236,6 +237,41 @@ async def help(ctx, *, name=""):
     embed.set_footer(text='◊ Copyright © 2018 𝐕𝐞𝐬𝐩𝐚 𝐂𝐨𝐫𝐩𝐨𝐫𝐚𝐭𝐢𝐨𝐧 Project. ◊')
     await bot.say(embed=embed)
     await bot.delete_message(ctx.message)
+
+
+@bot.command(pass_context=True)
+async def pregs(ctx, *, name=""):
+    embed=discord.Embed(title="𝑳𝒊𝒔𝒕𝒆𝒔 𝒅𝒆𝒔 𝐩𝐫𝐞𝐠 𝒅𝒖 𝑺𝒆𝒍𝒇𝒃𝒐𝒕 𝒅𝒆 𝒍𝒂 𝑽𝒆𝒔𝒑𝒂.",color=0x9900FF)
+    embed.add_field(name='-𝐟𝐮𝐮𝐮', value='(╯°□°）╯︵ ┻━', inline=False)
+    embed.add_field(name='-𝐜𝐡𝐨𝐦𝐚𝐠𝐞', value='𝐕𝐨𝐮𝐬 𝐩𝐞𝐫𝐦𝐞𝐭𝐬 𝐝𝐞 𝐫𝐞𝐦𝐞𝐭𝐭𝐫𝐞 𝐝𝐞𝐬 𝐜𝐡𝐨𝐦𝐞𝐮𝐫𝐬 𝐚̀ 𝐥𝐞𝐮𝐫 𝐩𝐥𝐚𝐜𝐞.', inline=False)
+    embed.add_field(name='-𝐫𝐮𝐧', value='ᕕ( ᐛ )ᕗ', inline=False)
+    embed.add_field(name='-𝐜𝐨𝐨𝐥', value='_へ__(‾◡◝ )>', inline=False)
+    embed.add_field(name='-𝐮𝐡', value='(;¬_¬)', inline=False)
+    embed.add_field(name='-𝐛𝐜', value='(҂⌣̀_⌣́)', inline=False)
+    embed.add_field(name='-𝐠𝐫', value='(╬⓪益⓪)', inline=False)
+    embed.add_field(name='-𝐰𝐭𝐟', value='° ͟ ͟ʖ ͡°', inline=False)
+    embed.add_field(name='-𝐥𝐞𝐧𝐧𝐲', value='(▀ ͜ʖ ͡°)', inline=False)
+    embed.add_field(name='-𝐚𝐫𝐦𝐲', value='( ͡° ͜ʖ ( ͡° ͜ʖ ( ͡° ͜ʖ ( ͡° ͜ʖ ͡°) ͜ʖ ͡°)ʖ ͡°)ʖ ͡°)', inline=False)
+    embed.add_field(name='-𝐲𝐞𝐬', value='(•̀ᴗ•́)و ̑̑', inline=False)
+    embed.add_field(name='-𝐲𝐞𝐲 ', value='( ͡° ͜ʖ ͡°)',inline=False)
+    embed.add_field(name='-𝐢𝐝𝐤', value='¯\_(ツ)_/¯', inline=False)
+    embed.add_field(name='-𝐰𝐮𝐭', value='ಠ_ಠ"', inline=False)
+    embed.add_field(name='-𝐛𝐢𝐭𝐜𝐡', value='(⌐■_■)', inline=False)
+    embed.add_field(name='-𝐢𝐬𝐬𝐨𝐮', value='𝐆𝐢𝐟 𝐝𝐮 𝐟𝐫𝐞𝐫𝐨 𝐑𝐢𝐬𝐢𝐭𝐚𝐬.', inline=False)
+    embed.add_field(name='-𝐬𝐧𝐚𝐩', value='𝐒𝐧𝐚𝐩 𝐝𝐮 𝐥𝐞́𝐠𝐞𝐧𝐝𝐚𝐢𝐫𝐞 𝐊𝐢𝐫𝐮𝐚 (𝐟𝐫𝐞́𝐪𝐮𝐚𝐦𝐞𝐧𝐭 𝐮𝐭𝐢𝐥𝐢𝐬𝐞́ 𝐩𝐨𝐮𝐫 𝐚𝐩𝐩𝐚𝐭𝐞𝐫 𝐝𝐞𝐬 𝐟𝐞𝐦𝐞𝐥𝐥𝐞𝐬)', inline=False)
+    embed.add_field(name='-𝐦𝐚𝐫𝐨𝐜', value='𝐆𝐢𝐟 𝐝𝐮 𝐦𝐞𝐢𝐥𝐥𝐞𝐮𝐫 𝐩𝐚𝐲𝐬 𝐝𝐮 𝐦𝐨𝐧𝐝𝐞.', inline=False)
+    embed.add_field(name='-𝐲𝐭𝐛', value='𝐂𝐡𝐚𝐢𝐧𝐞 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐝𝐮 𝐥𝐞́𝐠𝐞𝐧𝐝𝐚𝐢𝐫𝐞 𝐊𝐢𝐫𝐮𝐚.', inline=False)
+    embed.add_field(name='-𝐩𝐛', value='𝐏𝐚𝐠𝐞 𝐏𝐚𝐬𝐭𝐞𝐛𝐢𝐧 𝐝𝐮 𝐥𝐞́𝐠𝐞𝐧𝐝𝐚𝐢𝐫𝐞 𝐊𝐢𝐫𝐮𝐚.', inline=False)
+    embed.add_field(name='-𝐯𝐞𝐬𝐩𝐚', value='𝐈𝐧𝐯𝐢𝐭𝐚𝐭𝐢𝐨𝐧 𝐬𝐮𝐫 𝐥𝐞 𝐬𝐞𝐫𝐯𝐞𝐮𝐫 𝐨𝐟𝐟𝐢𝐜𝐢𝐞𝐥 𝐝𝐞 𝐥𝐚 𝐕𝐞𝐬𝐩𝐚 𝐂𝐨𝐫𝐩𝐨𝐫𝐚𝐭𝐢𝐨𝐧.', inline=False)
+    embed.add_field(name='-𝐠𝐢𝐭𝐡𝐮𝐛', value='𝐆𝐢𝐭𝐇𝐮𝐛 𝐝𝐮 𝐜𝐫𝐞́𝐚𝐭𝐞𝐮𝐫 𝐝𝐞 𝐜𝐞 𝐛𝐨𝐭.', inline=False)
+    embed.add_field(name='-𝐬𝐥𝐢𝐦𝐞', value='༼ つ ◕_◕ ༽つ ', inline=False)
+    embed.set_thumbnail(url='https://i.imgur.com/GxNI0Mk.png')
+    embed.set_author(name='𝐕𝐞𝐬𝐩𝐚 𝐂𝐨𝐫𝐩𝐨𝐫𝐚𝐭𝐢𝐨𝐧', icon_url='https://i.imgur.com/GxNI0Mk.png')
+    embed.set_image(url='https://i.imgur.com/W1ZFZ3h.gif')
+    embed.set_footer(text='◊ Copyright © 2018 𝐕𝐞𝐬𝐩𝐚 𝐂𝐨𝐫𝐩𝐨𝐫𝐚𝐭𝐢𝐨𝐧 Project. ◊')
+    await bot.say(embed=embed)
+    await bot.delete_message(ctx.message)
+
 
 @bot.command(pass_context=True)
 async def live(ctx):
